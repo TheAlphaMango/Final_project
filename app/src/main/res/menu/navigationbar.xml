@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homebtn"
+            android:title="@string/home"/>
+
+        <item
+            android:id="@+id/searchbtn"
+            android:title="@string/search"/>
+
+        <item
+            android:id="@+id/favoritesbtn"
+            android:title="@string/favorite"/>
+
+        <item
+            android:id="@+id/randomimgbtn"
+            android:title="@string/random"/>
+
+        <item
+            android:id="@+id/exitbtn"
+            android:title="@string/exit"/>
+    </group>
+</menu>

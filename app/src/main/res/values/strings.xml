@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CST2335 Final project</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_msg">Welcome to Nasa image of the day search!</string>
+    <string name="app_version">App version 1.0.0</string>
+    <string name="enter_name">Enter name here</string>
+    <string name="save_name">Save</string>
+    <string name="date">Chosen date</string>
+    <string name="new_date">Select new date</string>
+    <string name="hdurl">Click to open the HD image!</string>
+    <string name="load">Load</string>
+    <string name="favorite">Favorite</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="random">Random image</string>
+    <string name="exit">Exit</string>
+    <string name="hint">Hint</string>
+    <string name="homehint">Enter or change your name and save it for future usage.</string>
+    <string name="searchhint">Select a date, and load the image to view it along with the URL and hd url.\nFavorite the image to add it to your favorites list.</string>
+    <string name="favoritehint">Select an item from the list to view more information about it, and press delete to delete it from your favorites.</string>
+    <string name="randomhint">Enjoy viewing random images from your favorites list on a 10 second timer.</string>
+</resources>
