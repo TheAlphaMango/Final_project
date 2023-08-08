@@ -61,6 +61,7 @@ public class Favorites extends ToolbarFunctionality {
         /**
          * Creates a dbhelper, and gets all the data from it
          */
+
         ImageDbHelper dbHelper = ImageDbHelper.getInstance(this);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
