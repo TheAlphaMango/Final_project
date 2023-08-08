@@ -16,6 +16,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 public class ToolbarFunctionality extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    /**
+     * Initializes the toolbar for every activity with the navigationbar
+     */
     protected void setupToolbar() {
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
@@ -31,6 +35,9 @@ public class ToolbarFunctionality extends AppCompatActivity implements Navigatio
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    /**
+     * Sends the user to a different activity if they're not already on that activity
+     */
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.homebtn) {
@@ -59,7 +66,14 @@ public class ToolbarFunctionality extends AppCompatActivity implements Navigatio
         return true;
     }
 
+    /**
+     * Displays customized hints depending on the page you're on
+     */
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        /**
+         * Get the message
+         */
         String msg = null;
         if (this instanceof MainActivity) {
             msg = getResources().getString(R.string.homehint);
@@ -71,6 +85,9 @@ public class ToolbarFunctionality extends AppCompatActivity implements Navigatio
             msg = getResources().getString(R.string.randomhint);
         }
 
+        /**
+         * Display the message
+         */
         if (msg != null) {
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
             alert.setTitle(getResources().getString(R.string.hint));
